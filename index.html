@@ -1,0 +1,89 @@
+<!doctype html>
+<html ng-app="myApp">
+<head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js"></script>
+</head>
+<body>
+<script type="text/ng-template" id="/home.html">
+
+<h3>{{message}}</h3>
+</script>
+<script type="text/ng-template" id="/book.html">
+    <h1>Book</h1>
+
+    <h3 >{{message}}</h3>
+    
+    <body>
+        <ul>
+            <li><a href="">Book1</a></li>
+            <li><a href="">Book2</li>
+            <li><a href="">Book3</a></li>
+            <li><a href="">Book4</a></li>
+            <li><a href="">Book5</a></li>
+        </ul>
+    </body>
+</script>
+<script type="text/ng-template" id="/contact.html">
+
+    <h1>Contact</h1>
+
+    <h3>{{message}}</h3>
+</script>
+
+<script type="text/ng-template" id="/about.html">
+
+    <h1>About</h1>
+
+<h3>{{message}}</h3>
+    </script>
+
+    <script type="text/ng-template" id="/popularbooks.html">
+
+        <h1>Popular Books</h1>
+
+<h3>{{message}}</h3>
+
+<body>
+    <ul>
+        <li>PopularBook1</li>
+        <li>PopularBook2</li>
+        <li>PopularBook3</li>
+        <li>PopularBook4</li>
+        <li>PopularBook5</li>
+    </ul>
+</body>
+        </script>
+
+<script type="text/ng-template" id="/author.html">
+    
+<h1>Authors</h1>
+
+<h3>{{message}}</h3>
+
+
+    <ul>
+        <li>Author1</li>
+        <li>Author2</li>
+        <li>Author3</li>
+        <li>Author4</li>
+        <li>Author5</li>
+    </ul>
+            </script>        
+    
+
+<a href="#/">Home</a>
+<a href="#/book">Book</a>
+<a href="#/author">Authors</a>
+<a href="#/popularbooks">Popular Books</a>
+<a href="#/contact">Contact</a>
+<a href="#/about">About</a>
+
+
+
+
+<div ng-view></div>
+
+<script src="app.js"></script>
+</body>
+</html>
